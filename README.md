@@ -11,7 +11,7 @@ del PhoneParser se pueda manipular de la siguiente forma:
 ```php
 $parser = new \Slayerfat\PhoneParser\PhoneParser()
 
-$parser->parseNumber(12345678901); // (1234)-567-8901
+$parser->parseNumber(1234567890); // (123)-456-7890
 $parser->parseString('algo1232224455xzx'); // 1232224455
 ```
 
@@ -23,6 +23,6 @@ The class follows the `PhoneParserInterface` where the instance can be manipulat
 ```php
 $parser = new \Slayerfat\PhoneParser\PhoneParser()
 
-$parser->parseNumber(12345678901); // (1234)-567-8901
+$parser->parseNumber(1234567890); // (123)-456-7890
 $parser->parseString('algo1232224455xzx'); // 1232224455
 ```
