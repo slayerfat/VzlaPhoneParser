@@ -20,7 +20,7 @@ class PhoneParser implements PhoneParserInterface
      *
      * @var string
      */
-    private $completePhoneRegex = '/(?P<cero>[0]?)(?P<code>[0-9]{3})(?P<trio>[\d]{3})(?P<gangbang>[\d]{4})/';
+    private $completePhoneRegex = '/(?P<cero>[0]?)(?P<code>[0-9]{3})(?P<trio>[\d]{3})(?P<rest>[\d]{4})/';
 
     /**
      * Regular Expression para el numero de telefono con formato no Venezolano.
@@ -46,7 +46,7 @@ class PhoneParser implements PhoneParserInterface
         $matches = $this->execute($this->completePhoneRegex, $number);
 
         if (sizeof($matches) > 1) {
-            return "({$matches['code']})-{$matches['trio']}-{$matches['gangbang']}";
+            return "({$matches['code']})-{$matches['trio']}-{$matches['rest']}";
         }
 
         return '';
