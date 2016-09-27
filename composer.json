@@ -1,0 +1,29 @@
+{
+  "name": "slayerfat/vzla-phone-parser",
+  "keywords": [
+    "phone",
+    "venezuela",
+    "telefono",
+    "parse",
+    "tranformar",
+    "cambiar"
+  ],
+  "homepage": "https://github.com/slayerfat/VzlaPhoneParser",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alejandro Granadillo",
+      "email": "slayerfat@gmail.com"
+    }
+  ],
+  "description": "Venezuela Phone Parser, change numbers to (02xx)-123-4567. Cambia telefonos de Venezuela a formato (02xx)-123-4567",
+  "require": {
+    "php": "^5.3.3 || ^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slayerfat\\PhoneParser\\": "src/"
+    }
+  }
+}
