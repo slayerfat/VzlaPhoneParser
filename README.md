@@ -1,5 +1,7 @@
 # VzlaPhoneParser
 
+[![Build Status](https://travis-ci.org/slayerfat/VzlaPhoneParser.svg?branch=master)](https://travis-ci.org/slayerfat/VzlaPhoneParser)
+
 ## Español
 Idea básica de un parser para teléfonos en 04xx-yyy-zzzz
 
